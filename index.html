@@ -1,0 +1,13 @@
+<script>
+function ysYonlendir(ID, adres, saniye) {
+  if (saniye == 0) {
+    window.location.href = https://sahmandeveloper.ga;
+    return;
+  }
+  document.getElementById(ID).innerHTML = saniye + " saniye sonra yönlendiriliyorsunuz.";
+  saniye--;
+  setTimeout(function() {
+    ysYonlendir(ID, adres, saniye);
+  }, 1000);
+}
+</script>
